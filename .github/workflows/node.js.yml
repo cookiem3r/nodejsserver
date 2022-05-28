@@ -26,9 +26,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-
-  dockerbuild:
-    runs-on: ubuntu-latest
-    steps:
     - uses: docker://alpine:3.8
     - run: docker build . -t foolnidiot/helloworld
