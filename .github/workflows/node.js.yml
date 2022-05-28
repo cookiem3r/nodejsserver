@@ -30,6 +30,6 @@ jobs:
   dockerbuild:
     runs-on: ubuntu-latest
     steps:
-    - uses: docker
+    - uses: docker://alpine:3.8
     - name: Docker Build
     - run: docker build . -t foolnidiot/helloworld
